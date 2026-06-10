@@ -1,0 +1,20 @@
+[project]
+name = "causality-for-data-scientists-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "causal-learn>=0.1.4.7",
+    "dowhy>=0.14",
+    "graphviz>=0.21",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "networkx>=3.6.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pydot>=4.0.1",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.17.1",
+    "statsmodels>=0.14.6",
+]
