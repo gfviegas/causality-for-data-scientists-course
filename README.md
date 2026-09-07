@@ -6,12 +6,12 @@ Material de apoio do minicurso **"Causality for Data Scientists: Discovery, Caus
 
 Os quatro notebooks ficam em `notebooks/`, numerados na ordem em que aparecem no curso:
 
-1. [Paradoxo de Simpson](notebooks/1_simpsons_paradox_example.ipynb)
-2. [Descoberta causal](notebooks/2_causal_discovery.ipynb)
-3. [Estimativa causal](notebooks/3_causal_estimation.ipynb)
-4. [Seleção causal de atributos](notebooks/4_causal_feature_selection.ipynb) 
+1. [Paradoxo de Simpson](notebooks/1_simpsons_paradox_example.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/1_simpsons_paradox_example.ipynb))
+2. [Descoberta causal](notebooks/2_causal_discovery.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/2_causal_discovery.ipynb))
+3. [Estimativa causal](notebooks/3_causal_estimation.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/3_causal_estimation.ipynb))
+4. [Seleção causal de atributos](notebooks/4_causal_feature_selection.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/4_causal_feature_selection.ipynb))
 
-Dentro de `notebooks/extras/` estão dois notebooks bônus: [efeitos heterogêneos com meta-learners (S/T/X-learner)](notebooks/extras/5_heterogeneous_effects.ipynb) e [SHAP vs. DiCE para explicações contrafactuais](notebooks/extras/6_counterfactual_explanations.ipynb).
+Dentro de `notebooks/extras/` estão dois notebooks bônus: [efeitos heterogêneos com meta-learners (S/T/X-learner)](notebooks/extras/5_heterogeneous_effects.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/extras/5_heterogeneous_effects.ipynb)) e [SHAP vs. DiCE para explicações contrafactuais](notebooks/extras/6_counterfactual_explanations.ipynb) ([abrir no Colab](https://colab.research.google.com/github/gfviegas/causality-for-data-scientists-course/blob/master/notebooks/extras/6_counterfactual_explanations.ipynb)).
 
 Os datasets que não vêm de um pacote Python (o dataset de vacinação por Covid-19 usado no Paradoxo de Simpson, e o dataset de sinalização de proteínas de Sachs et al. usado na descoberta causal) estão em `datasets/`. Toda figura gerada por algum notebook é salva em `figures/`, e algumas dessas figuras reaparecem nos slides.
 
