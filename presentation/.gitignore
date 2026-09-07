@@ -1,0 +1,12 @@
+*.log
+*.aux
+*.bbl
+*.bbl-*
+*.bcf
+*.nav
+*.snm
+*.run.xml
+*.synctex.gz
+*.toc
+*.out
+*.blg

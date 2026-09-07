@@ -1,0 +1,1121 @@
+%%%
+% DEFINITIONS
+%%%
+@article{hossain2025churnprediction,
+  author = {Hossain, Mohammad R.},
+  title = {Predicting Customer Churn in Telecommunications With Machine Learning Models},
+  journal = {Asian Journal of Research in Computer Science},
+  year = {2025},
+  articleno = {AJRCOS.129004},
+  doi = {10.9734/ajrcos/2025/v18i1548}
+}
+
+@mastersthesis{diss-viegas2026,
+  author = {de Oliveira, Gustavo F.V.},
+  title  = {Causal Discovery, Inference and Validation for Machine Learning Practitioners: An Accessible Framework Approach},
+  school = {Universidade Federal de Vi\c{c}osa},
+  year   = {2026},
+  type   = {Dissertação de Mestrado},
+  note   = {Orientador: Fabrício Aguiar Silva; Coorientador: Marcus Henrique Soares Mendes}
+}
+
+@article{causal-nest-kbs,
+  author    = {de Oliveira, Gustavo F.V. and Silva, Fabrício A. and Mendes, Marcus H.S.},
+  title     = {Causal-Nest: A framework for automated causal discovery and inference},
+  journal   = {Knowledge-Based Systems},
+  volume    = {343},
+  pages     = {116005},
+  year      = {2026},
+  issn      = {0950-7051},
+  doi       = {10.1016/j.knosys.2026.116005},
+  url       = {https://www.sciencedirect.com/science/article/pii/S0950705126007318},
+  keywords  = {Causality; Causal discovery; Causality for ML; Causal Feature Engineering; Causal Inference Framework},
+  abstract  = {Causal discovery offers a path for Machine Learning models to move beyond mere correlation to understand cause-and-effect relationships. Still, its operational complexity remains a significant barrier for non-expert developers. This paper introduces Causal-Nest, a new, comprehensive framework that simplifies and operationalizes the causal analysis pipeline for non-experts. The contribution of the framework is demonstrated through an extensive, two-part evaluation. First, we validate its theoretical correctness and diagnostic power using the well-known Sachs et. al. dataset and an extended benchmark of seven real-world datasets with known causal constraints. Our results show that the proposed framework effectively assesses causal graph integrity, using metrics, including the novel Knowledge Integrity Score (KIS), to pinpoint structural discovery failures and statistical unreliability quantitatively. Second, we demonstrate its practical utility in a common Machine Learning scenario where no such ground truth is available: telecommunications customer churn prediction. We show that using the proposed framework to guide a causality-driven feature engineering process yields a causal oversampled feature set that significantly improves the minority-class F1-Score of ensemble prediction models (e.g., CBC, GBMC). This work validates Causal-Nest as a single, dual-purpose tool that successfully bridges the gap between rigorous causal validation and practical, performance-driven machine learning applications.}
+}
+
+@inproceedings{causal-nest,
+  author = {de Oliveira, Gustavo F.V. and Silva, Fabrício A. and Mendes, Marcus H.S.},
+  title  = {A Framework for Practical Causal Discovery from Observational Data},
+  booktitle = {Proceedings of the 2nd Workshop on Causal Discovery - CaDis},
+  address = {Universidad de la República, Montevideo, Uruguay},
+  year   = {2024},
+  month = nov,
+  url    = {https://amexcomp.mx/media/publicaciones/CaDis_2024_Proceedings.pdf}
+}
+@inproceedings{CBIC2025-1175578,
+    author 	  = {de Oliveira, Gustavo F.V. and Silva, Fabrício A. and Mendes, Marcus H.S.},
+    title     = {Causality-Driven Feature Engineering for Enhanced Telecommunications Churn Prediction},
+    booktitle = {Anais do XVII Congresso Brasileiro de Intelig\^encia Computacional (CBIC 2025)},
+    pages     = {1--8},
+    publisher = {SBIC},
+    address   = {Belo Horizonte, MG},
+    year      = {2025},
+    doi       = {10.21528/CBIC2025-1175578}
+  }
+  
+
+@book{definition-pearl2009causality,
+	title        = {Causality},
+	author       = {Pearl, Judea},
+	year         = 2009,
+	publisher    = {Cambridge University Press},
+    doi          = {10.1017/CBO9780511803161}
+}
+@article{definition-pearlinference,
+	title        = {The Seven Tools of Causal Inference, with Reflections on Machine Learning},
+	author       = {Pearl, Judea},
+	year         = 2019,
+	month        = feb,
+	journal      = {Commun. ACM},
+	publisher    = {Association for Computing Machinery},
+	volume       = 62,
+	number       = 3,
+	pages        = {54–60},
+	doi          = {10.1145/3241036},
+	issn         = {0001-0782},
+	url          = {https://doi.org/10.1145/3241036},
+	issue_date   = {March 2019},
+	abstract     = {The kind of causal inference seen in natural human thought can be "algorithmitized" to help produce human-level machine intelligence.},
+	numpages     = 7
+}
+@misc{definition-pearl2018theoretical,
+	title        = {Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution},
+	author       = {Pearl, Judea},
+	year         = 2018,
+	publisher    = {arXiv},
+	doi          = {10.48550/arXiv.1801.04016},
+	eprint       = {1801.04016},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.AI}
+}
+@book{definition-montgomery2012introduction,
+	title        = {Introduction to Linear Regression Analysis},
+	author       = {Montgomery, Douglas C and Peck, Elizabeth A and Vining, G Geoffrey},
+	year         = 2012,
+	publisher    = {Wiley}
+}
+@book{definition-friedman2001elements,
+	title        = {The Elements of Statistical Learning: Data Mining, Inference, and Prediction},
+	author       = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert},
+	year         = 2001,
+	publisher    = {Springer}
+}
+@book{definition-imbens2015causal,
+	title        = {Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction},
+	author       = {Imbens, Guido W and Rubin, Donald B},
+	year         = 2015,
+	publisher    = {Cambridge University Press},
+    doi          = {10.1017/CBO9781139025751}
+}
+@book{definition-spirtes2000causation,
+	title        = {Causation, Prediction, and Search},
+	author       = {Spirtes, Peter and Glymour, Clark and Scheines, Richard},
+	year         = 2000,
+	publisher    = {MIT Press}
+}
+%%%
+% USE EXAMPLES
+%%%
+@inproceedings{ai-ensign2018runaway,
+	title        = {Runaway feedback loops in predictive policing},
+	author       = {Ensign, Danielle and Friedler, Sorelle A and Neville, Scott and others},
+	year         = 2018,
+	booktitle    = {Conference on fairness, accountability and transparency},
+	pages        = {160--171},
+	organization = {PMLR}
+}
+@article{ai-obermeyer2019dissecting,
+	title        = {Dissecting racial bias in an algorithm used to manage the health of populations},
+	author       = {Obermeyer, Ziad and Powers, Brian and Vogeli, Christine and others},
+	year         = 2019,
+	journal      = {Science},
+	publisher    = {American Association for the Advancement of Science},
+	volume       = 366,
+	number       = 6464,
+	pages        = {447--453},
+    doi          = {10.1126/science.aax2342}
+}
+@inproceedings{ai-alcorn2019strike,
+	title        = {Strike (with) a pose: Neural networks are easily fooled by strange poses of familiar objects},
+	author       = {Alcorn, Michael A and Li, Qi and Gong, Zhitao and others},
+	year         = 2019,
+	booktitle    = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+	pages        = {4845--4854},
+    doi          = {10.1109/CVPR.2019.00498}
+}
+@inbook{ai-scholkopf,
+	title        = {Causality for Machine Learning},
+	author       = {Sch\"{o}lkopf, Bernhard},
+	year         = 2022,
+	booktitle    = {Probabilistic and Causal Inference: The Works of Judea Pearl},
+	publisher    = {Association for Computing Machinery},
+	pages        = {765–804},
+	isbn         = 9781450395861,
+	url          = {https://doi.org/10.1145/3501714.3501755},
+	edition      = 1,
+	numpages     = 40,
+    doi		 = {10.1145/3501714.3501755}
+}
+@article{ai-yu_kui_guo,
+	title        = {Causality-based Feature Selection: Methods and Evaluations},
+	author       = {Yu, Kui and Guo, Xianjie and Liu, Lin and others},
+	year         = 2020,
+	month        = sep,
+	journal      = {ACM Comput. Surv.},
+	publisher    = {Association for Computing Machinery},
+	volume       = 53,
+	number       = 5,
+	doi          = {10.1145/3409382},
+	issn         = {0360-0300},
+	issue_date   = {September 2021},
+	articleno    = 111,
+	numpages     = 36,
+	keywords     = {Markov boundary, Feature selection, Bayesian network},
+    doi         = {10.1145/3409382},
+}
+@inproceedings{ai-yu_healthcare,
+	title        = {Dynamic Causality Knowledge Graph Generation for Supporting the Chatbot Healthcare System},
+	author       = {Yu, Hong Qing},
+	year         = 2021,
+	booktitle    = {Proceedings of the Future Technologies Conference (FTC) 2020, Volume 3},
+	publisher    = {Springer International Publishing},
+	pages        = {30--45},
+	isbn         = {978-3-030-63092-8},
+	editor       = {},
+	doi		 = {10.1007/978-3-030-63092-8_3}
+}
+@article{ai-moraffah2021causal,
+	title        = {Causal inference for time series analysis: Problems, methods and evaluation},
+	author       = {Moraffah, Raha and Sheth, Paras and Karami, Mansooreh and others},
+	year         = 2021,
+	journal      = {Knowledge and Information Systems},
+	publisher    = {Springer},
+	volume       = 63,
+	pages        = {3041--3085},
+    doi		 = {10.1007/s10115-021-01621-0}
+}
+%%%
+% TOOLS
+%%%
+@misc{tool-dowhy,
+	title        = {DoWhy: An End-to-End Library for Causal Inference},
+	author       = {Sharma, Amit and Kiciman, Emre},
+	year         = 2020,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.2011.04216},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Methodology (stat.ME), Artificial Intelligence (cs.AI), Mathematical Software (cs.MS), Econometrics (econ.EM), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Economics and business, FOS: Economics and business}
+}
+@inproceedings{tool-econml,
+	title        = {Causal Inference and Machine Learning in Practice with EconML and CausalML: Industrial Use Cases at Microsoft, TripAdvisor, Uber},
+	author       = {Syrgkanis, Vasilis and Lewis, Greg and Oprescu, Miruna and others},
+	year         = 2021,
+	booktitle    = {Proceedings of the 27th ACM SIGKDD},
+	location     = {Virtual Event, Singapore},
+	publisher    = {ACM},
+	series       = {KDD '21},
+	pages        = {4072–4073},
+	doi          = {10.1145/3447548.3470792},
+	isbn         = 9781450383325,
+	abstract     = {In recent years, both academic research and industry applications see an increased effort in using machine learning methods to measure granular causal effects and design optimal policies based on these causal estimates. Open source packages such as CausalML and EconML provide a unified interface for applied researchers and industry practitioners with a variety of machine learning methods for causal inference. The tutorial will cover the topics including conditional treatment effect estimators by meta-learners and tree-based algorithms, model validations and sensitivity analysis, optimization algorithms including policy leaner and cost optimization. In addition, the tutorial will demonstrate the production of these algorithms in industry use cases.},
+	numpages     = 2,
+	keywords     = {econml, causalml, causal inference}
+}
+@misc{tool-ubercausalml,
+	title        = {CausalML: Python Package for Causal Machine Learning},
+	author       = {Chen, Huigang and Harinen, Totte and Lee, Jeong-Yoon and others},
+	year         = 2020,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.2002.11631},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Computers and Society (cs.CY), Machine Learning (cs.LG), Computation (stat.CO), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@misc{tool-causaldiscoverytoolbox,
+	title        = {Causal Discovery Toolbox: Uncover causal relationships in Python},
+	author       = {Kalainathan, Diviyan and Goudet, Olivier},
+	year         = 2019,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.1903.02278},
+	copyright    = {Creative Commons Attribution Share Alike 4.0 International},
+	keywords     = {Computation (stat.CO), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@misc{tool-causallearn,
+	title        = {Causal-learn: Causal Discovery in Python},
+	author       = {Yujia Zheng and Biwei Huang and Wei Chen and others},
+	year         = 2023,
+	eprint       = {2307.16405},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.LG}
+}
+@techreport{tool-networkx,
+	title        = {Exploring network structure, dynamics, and function using NetworkX},
+	author       = {Hagberg, Aric and Swart, Pieter J and Schult, Daniel A},
+	year         = 2008,
+	institution  = {Los Alamos National Laboratory (LANL), Los Alamos, NM (United States)}
+}
+@misc{tool-causalnex,
+	title        = {CausalNex},
+	author       = {{QuantumBlack Labs}},
+	year         = 2021,
+	howpublished = {\url{https://github.com/mckinsey/causalnex}},
+}
+@article{tool-salesforce-causalai,
+	title        = {Salesforce CausalAI Library: A Fast and Scalable Framework for Causal Analysis of Time Series and Tabular Data},
+	author       = {Arpit, Devansh and Howson, Matthew and others},
+	year         = 2023,
+	journal      = {arXiv preprint arXiv:2301.10859}
+}
+%%%
+% DATASETS
+%%%
+@misc{dataset-iranian-telecom,
+  title        = {{Iranian Churn}},
+  year         = {2020},
+  howpublished = {UCI Machine Learning Repository},
+  doi         = {10.24432/C5JW3Z}
+}
+
+@misc{dataset-airfoil_self_noise,
+	title        = {{Airfoil Self-Noise}},
+	author       = {Brooks, Thomas and Pope, D. and Marcolini, Michael},
+	year         = 2014,
+	doi          = {10.24432/C5VW2C},
+	howpublished = {UCI Machine Learning Repository}
+}
+@article{datset-sachs,
+	title        = {Causal Protein-Signaling Networks Derived from Multiparameter Single-Cell Data},
+	author       = {Karen Sachs  and Omar Perez  and Dana Pe'er  and others},
+	year         = 2005,
+	journal      = {Science},
+	volume       = 308,
+	number       = 5721,
+	pages        = {523--529},
+	doi          = {10.1126/science.1105809}
+}
+@misc{dataset-yacht_hydrodynamics,
+	title        = {{Yacht Hydrodynamics}},
+	author       = {Gerritsma, J. and Onnink, R. and Versluis, A.},
+	year         = 2013,
+	doi          = {10.24432/C5XG7R},
+	howpublished = {UCI Machine Learning Repository}
+}
+@article{dataset-wine_quality,
+	title        = {Modeling wine preferences by data mining from physicochemical properties},
+	author       = {Paulo Cortez and António Cerdeira and Fernando Almeida and others},
+	year         = 2009,
+	journal      = {Decision Support Systems},
+	volume       = 47,
+	number       = 4,
+	pages        = {547--553},
+	doi          = {10.1016/j.dss.2009.05.016},
+	issn         = {0167-9236},
+	note         = {Smart Business Networks: Concepts and Empirical Evidence},
+	keywords     = {Sensory preferences, Regression, Variable selection, Model selection, Support vector machines, Neural networks},
+	abstract     = {We propose a data mining approach to predict human wine taste preferences that is based on easily available analytical tests at the certification step. A large dataset (when compared to other studies in this domain) is considered, with white and red vinho verde samples (from Portugal). Three regression techniques were applied, under a computationally efficient procedure that performs simultaneous variable and model selection. The support vector machine achieved promising results, outperforming the multiple regression and neural network methods. Such model is useful to support the oenologist wine tasting evaluations and improve wine production. Furthermore, similar techniques can help in target marketing by modeling consumer tastes from niche markets.}
+}
+@misc{dataset-algerian_forest_fires,
+	title        = {{Algerian Forest Fires}},
+	author       = {Abid, Faroudja},
+	year         = 2019,
+	doi         = {10.24432/C5KW4N},
+	howpublished = {UCI Machine Learning Repository}
+}
+@article{dataset-sources-zheng2024causal,
+	title        = {Causal-learn: Causal discovery in python},
+	author       = {Zheng, Yujia and Huang, Biwei and Chen, Wei and others},
+	year         = 2024,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 25,
+	number       = 60,
+	pages        = {1--8}
+}
+@data{dataset-apple_watch_fitbit,
+author = {Fuller, Daniel},
+publisher = {Harvard Dataverse},
+title = {{Replication Data for: Using machine learning methods to predict physical activity types with Apple Watch and Fitbit data using indirect calorimetry as the criterion.}},
+year = {2020},
+version = {V1},
+doi = {10.7910/DVN/ZS2Z2J}
+}
+
+@misc{dataset-student_performance,
+  author       = {Cortez, Paulo},
+  title        = {{Student Performance}},
+  year         = {2014},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5TG7T}
+}
+@misc{dataset-auto_mpg,
+  author       = {Quinlan, R.},
+  title        = {{Auto MPG}},
+  year         = {1993},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5859H}
+}
+@misc{dataset-abalone,
+  author       = {Nash, Warwick and Sellers, Tracy and Talbot, Simon and Cawthorn, Andrew and Ford, Wes},
+  title        = {{Abalone}},
+  year         = {1995},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C55C7W}
+}
+@misc{dataset-adult,
+  author       = {Becker, Barry and Kohavi, Ronny},
+  title        = {{Adult}},
+  year         = {1996},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5XW20}
+}
+
+@misc{dataset-covertype,
+  author       = {Blackard, Jock},
+  title        = {{Covertype}},
+  year         = {1998},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C50K5N}
+}
+
+@misc{dataset-dry_bean,
+  author       = {Koklu, Murat and Ozkan, Ilker Ali},
+  title        = {{Dry Bean}},
+  year         = {2020},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C50S4B}
+}
+
+@misc{dataset-htru2,
+  author       = {Lyon, Robert},
+  title        = {{HTRU2}},
+  year         = {2015},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5DK6R}
+}
+
+@misc{dataset-hungarian_chickenpox,
+  author       = {Rozemberczki, Benedek},
+  title        = {{Hungarian Chickenpox Cases}},
+  year         = {2021},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5103B}
+}
+
+@misc{dataset-myocardial_infarction,
+  author       = {Golovenkin, S. E. and Shulman, V. A. and Rossiev, D. A. and Shesternya, P. A. and Nikulina, S. Yu. and Orlova, Yu. V. and Voino-Yasenetsky, V. F.},
+  title        = {{Myocardial infarction complications}},
+  year         = {2020},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C53P5M}
+}
+
+@misc{dataset-superconductivty,
+  author       = {Hamidieh, Kam},
+  title        = {{Superconductivty Data}},
+  year         = {2018},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C53P47}
+}
+
+@misc{dataset-car,
+  author       = {Bohanec, Marko},
+  title        = {{Car Evaluation}},
+  year         = {1988},
+  howpublished = {UCI Machine Learning Repository},
+  doi          = {10.24432/C5JP48}
+}
+
+%%%
+% CAUSAL DISCOVERY ALGORITHMS
+%%%
+@phdthesis{discovery-gs,
+	title        = {Learning Bayesian network model structure from data},
+	author       = {Margaritis, Dimitris and others},
+	year         = 2003,
+	school       = {School of Computer Science, Carnegie Mellon University Pittsburgh, PA, USA}
+}
+@inproceedings{discovery-iamb,
+	title        = {Algorithms for large scale Markov blanket discovery.},
+	author       = {Tsamardinos, Ioannis and Aliferis, Constantin F and Statnikov, Alexander R and others},
+	year         = 2003,
+	booktitle    = {FLAIRS},
+	volume       = 2,
+	pages        = {376--81}
+}
+@inproceedings{discovery-iamb-variants,
+	title        = {Speculative Markov Blanket Discovery for Optimal Feature Selection},
+	author       = {Yaramakala, Sandeep and Margaritis, Dimitris},
+	year         = 2005,
+	booktitle    = {ICDM '05: Proceedings of the Fifth IEEE International Conference on Data Mining},
+	publisher    = {IEEE Computer Society},
+	pages        = {809--812},
+	doi          = {10.1109/ICDM.2005.40}
+}
+@article{discovery-mmpc,
+	title        = {The Max-Min Hill-Climbing Bayesian Network Structure Learning Algorithm},
+	author       = {Tsamardinos, Ioannis and Brown, Laura E and Aliferis, Constantin F},
+	year         = 2006,
+	journal      = {Machine Learning},
+	volume       = 65,
+	number       = 1,
+	pages        = {31--78},
+	doi          = {10.1007/s10994-006-6889-7}
+}
+@article{discovery-cam,
+    ISSN = {00905364},
+    URL = {http://www.jstor.org/stable/43556502},
+    author = {Peter Bühlmann and Jonas Peters and Jan Ernest},
+    journal = {The Annals of Statistics},
+    number = {6},
+    pages = {2526--2556},
+    publisher = {Institute of Mathematical Statistics},
+    urldate = {2025-10-30},
+    volume = {42},
+    year = {2014},
+	title        = {{CAM}: Causal additive models, high-dimensional order search and penalized regression}
+}
+@article{discovery-ccdr,
+	title        = {Concave penalized estimation of sparse Gaussian Bayesian networks},
+	author       = {Aragam, Bryon and Zhou, Qing},
+	year         = 2015,
+	journal      = {The Journal of Machine Learning Research},
+	publisher    = {JMLR. org},
+	volume       = 16,
+	number       = 1,
+	pages        = {2273--2328}
+}
+@article{discovery-cgnn,
+	title        = {Learning functional causal models with generative neural networks},
+	author       = {Goudet, Olivier and Kalainathan, Diviyan and Caillou, Philippe and others},
+	year         = 2018,
+	journal      = {Explainable and interpretable models in computer vision and machine learning},
+	publisher    = {Springer},
+	pages        = {39--80}
+}
+@article{discovery-ges_gies,
+	title        = {High-dimensional consistency in score-based and hybrid structure learning},
+	author       = {Nandy, Preetam and Hauser, Alain and Maathuis, Marloes H},
+	year         = 2018,
+	journal      = {The Annals of Statistics},
+	publisher    = {JSTOR},
+	volume       = 46,
+	number       = {6A},
+	pages        = {3151--3183},
+    doi          = {10.1214/17-AOS1654}
+}
+@article{discovery-lingam,
+	title        = {A linear non-Gaussian acyclic model for causal discovery.},
+	author       = {Shimizu, Shohei and Hoyer, Patrik O and Hyv{\"a}rinen, Aapo and others},
+	year         = 2006,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 7,
+	number       = 10
+}
+@article{discovery-pc,
+	title        = {Estimating high-dimensional directed acyclic graphs with the PC-algorithm.},
+	author       = {Kalisch, Markus and B{\"u}hlman, Peter},
+	year         = 2007,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 8,
+	number       = 3
+}
+@article{discovery-sam,
+	title        = {Structural agnostic modeling: Adversarial learning of causal graphs},
+	author       = {Kalainathan, Diviyan and Goudet, Olivier and Guyon, Isabelle and others},
+	year         = 2022,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 23,
+	number       = 219,
+	pages        = {1--62}
+}
+@inproceedings{discovery-grasp,
+	title        = {Greedy relaxations of the sparsest permutation algorithm},
+	author       = {Lam, Wai-Yin and Andrews, Bryan and Ramsey, Joseph},
+	year         = 2022,
+	booktitle    = {Uncertainty in Artificial Intelligence},
+	pages        = {1052--1062},
+	organization = {PMLR}
+}
+@article{discovery-bes,
+	title        = {Learning optimal Bayesian networks: A shortest path perspective},
+	author       = {Yuan, Changhe and Malone, Brandon},
+	year         = 2013,
+	journal      = {Journal of Artificial Intelligence Research},
+	volume       = 48,
+	pages        = {23--65},
+    doi          = {10.1613/jair.4039}
+}
+@misc{discovery-cdt,
+	title        = {Causal Discovery Toolbox: Uncover causal relationships in Python},
+	author       = {Diviyan Kalainathan and Olivier Goudet},
+	year         = 2019,
+	eprint       = {1903.02278},
+	archiveprefix = {arXiv},
+	primaryclass = {stat.CO}
+}
+@article{discovery-bnlearn,
+	title        = {Learning Bayesian Networks with the {bnlearn} {R} Package},
+	author       = {Marco Scutari},
+	year         = 2010,
+	journal      = {Journal of Statistical Software},
+	volume       = 35,
+	number       = 3,
+	pages        = {1--22},
+	doi          = {10.18637/jss.v035.i03}
+}
+@article{discovery-pcalg,
+	title        = {Causal Inference Using Graphical Models with the {R} Package {pcalg}},
+	author       = {{Markus Kalisch} and {Martin M\"achler} and {Diego Colombo} and others},
+	year         = 2012,
+	journal      = {Journal of Statistical Software},
+	volume       = 47,
+	number       = 11,
+	pages        = {1--26},
+	doi          = {10.18637/jss.v047.i11}
+}
+@inproceedings{discovery-pytorch,
+	title        = {PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation},
+	author       = {Ansel, Jason, Yang et al.},
+	year         = 2024,
+	booktitle    = {Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+	location     = {<conf-loc>, <city>La Jolla</city>, <state>CA</state>, <country>USA</country>, </conf-loc>},
+	publisher    = {Association for Computing Machinery},
+	series       = {ASPLOS '24},
+	pages        = {929–947},
+	doi          = {10.1145/3620665.3640366},
+	isbn         = 9798400703850,
+	numpages     = 19
+}
+@article{discovery-sparsebn,
+	title        = {Learning Large-Scale Bayesian Networks with the sparsebn Package},
+	author       = {Aragam, Bryon and Gu, Jiaying and Zhou, Qing},
+	year         = 2019,
+	journal      = {Journal of Statistical Software},
+	publisher    = {Foundation for Open Access Statistic},
+	volume       = 91,
+	number       = 11,
+	doi          = {10.18637/jss.v091.i11},
+	issn         = {1548-7660}
+}
+%%%
+% STATS AND METRICS
+%%%
+@article{stats-sid,
+    author = {Peters, Jonas and Bühlmann, Peter},
+    title = {Structural Intervention Distance for Evaluating Causal Graphs},
+    journal = {Neural Computation},
+    volume = {27},
+    number = {3},
+    pages = {771-799},
+    year = {2015},
+    month = {03},
+    issn = {0899-7667},
+    doi = {10.1162/NECO_a_00708}
+}
+
+@article{stats-shd,
+	title        = {The max-min hill-climbing Bayesian network structure learning algorithm},
+	author       = {Tsamardinos, Ioannis and Brown, Laura E and Aliferis, Constantin F},
+	year         = 2006,
+	journal      = {Machine learning},
+	publisher    = {Springer},
+	volume       = 65,
+	pages        = {31--78},
+    doi          = {10.1007/s10994-006-6889-7}
+}
+@article{stats-scipy,
+	title        = {{{SciPy} 1.0: Fundamental Algorithms for Scientific Computing in Python}},
+	author       = {Virtanen, Pauli, Gommers et. al.},
+	year         = 2020,
+	journal      = {Nature Methods},
+	volume       = 17,
+	pages        = {261--272},
+	doi          = {10.1038/s41592-019-0686-2},
+	adsurl       = {https://rdcu.be/b08Wh}
+}
+@article{stats-dagostino-pearson,
+	title        = {Tests for departure from normality. Empirical results for the distributions of $b_{2}$ and $\sqrt{b_{1}}$},
+	author       = {D'agostino, RALPH and Pearson, Egon S},
+	year         = 1973,
+	journal      = {Biometrika},
+	publisher    = {Oxford University Press},
+	volume       = 60,
+	number       = 3,
+	pages        = {613--622}
+}
+
+@InProceedings{stats-aucpr,
+author="Boyd, Kendrick
+and Eng, Kevin H.
+and Page, C. David",
+editor="Blockeel, Hendrik
+and Kersting, Kristian
+and Nijssen, Siegfried
+and {\v{Z}}elezn{\'y}, Filip",
+title="Area under the Precision-Recall Curve: Point Estimates and Confidence Intervals",
+booktitle="Machine Learning and Knowledge Discovery in Databases",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="451--466",
+abstract="The area under the precision-recall curve (AUCPR) is a single number summary of the information in the precision-recall (PR) curve. Similar to the receiver operating characteristic curve, the PR curve has its own unique properties that make estimating its enclosed area challenging. Besides a point estimate of the area, an interval estimate is often required to express magnitude and uncertainty. In this paper we perform a computational analysis of common AUCPR estimators and their confidence intervals. We find both satisfactory estimates and invalid procedures and we recommend two simple intervals that are robust to a variety of assumptions.",
+isbn="978-3-642-40994-3"
+}
+
+
+@article{review-methods-cd-ci,
+author = {Nogueira, Ana Rita and Pugnana, Andrea and Ruggieri, Salvatore and Pedreschi, Dino and Gama, João},
+title = {Methods and tools for causal discovery and causal inference},
+journal = {WIREs Data Mining and Knowledge Discovery},
+volume = {12},
+number = {2},
+pages = {e1449},
+keywords = {causal discovery, causal inference, causality},
+doi = {https://doi.org/10.1002/widm.1449},
+url = {https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1449},
+eprint = {https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.1449},
+year = {2022}
+}
+
+%%%
+% FUNDAMENTALS - NEW REFERENCES
+%%%
+@article{definition-simpson1951interpretation,
+	title        = {The Interpretation of Interaction in Contingency Tables},
+	author       = {Simpson, Edward H.},
+	year         = 1951,
+	journal      = {Journal of the Royal Statistical Society: Series B (Methodological)},
+	volume       = 13,
+	number       = 2,
+	pages        = {238--241},
+	doi          = {10.1111/j.2517-6161.1951.tb00088.x}
+}
+
+@article{definition-rubin1974estimating,
+	title        = {Estimating Causal Effects of Treatments in Randomized and Nonrandomized Studies},
+	author       = {Rubin, Donald B.},
+	year         = 1974,
+	journal      = {Journal of Educational Psychology},
+	volume       = 66,
+	number       = 5,
+	pages        = {688--701},
+	doi          = {10.1037/h0037350}
+}
+
+@article{definition-holland1986statistics,
+	title        = {Statistics and Causal Inference},
+	author       = {Holland, Paul W.},
+	year         = 1986,
+	journal      = {Journal of the American Statistical Association},
+	volume       = 81,
+	number       = 396,
+	pages        = {945--960},
+	doi          = {10.1080/01621459.1986.10478354}
+}
+
+@book{definition-koller2009probabilistic,
+	title        = {Probabilistic Graphical Models: Principles and Techniques},
+	author       = {Koller, Daphne and Friedman, Nir},
+	year         = 2009,
+	publisher    = {MIT Press},
+	isbn         = {9780262013192}
+}
+
+@article{definition-zhang2008causal,
+	title        = {On the completeness of orientation rules for causal discovery in the presence of latent confounders and selection bias},
+	author       = {Zhang, Jiji},
+	year         = 2008,
+	journal      = {Artificial Intelligence},
+	volume       = 172,
+	number       = {16-17},
+	pages        = {1873--1896},
+	doi          = {10.1016/j.artint.2008.08.001}
+}
+
+@article{tool-pgmpy,
+author = {Ankan, Ankur and Textor, Johannes},
+journal = {Journal Of Machine Learning Research},
+number = {25},
+pages = {1--8},
+title = {{pgmpy: A Python Toolkit for Bayesian Networks}},
+year = {2024}
+}
+
+@article{tool-bnlearn,
+title={Learning Bayesian Networks with the bnlearn R Package},
+volume={35},
+url={https://www.jstatsoft.org/index.php/jss/article/view/v035i03},
+doi={10.18637/jss.v035.i03},
+abstract={&amp;lt;b&amp;gt;bnlearn&amp;lt;/b&amp;gt; is an &amp;lt;b&amp;gt;R&amp;lt;/b&amp;gt;
+package (R Development Core Team 2010) which includes several algorithms for learning the structure
+of Bayesian networks with either discrete or continuous variables. Both constraint-based and
+score-based algorithms are implemented, and can use the functionality provided by the
+&amp;lt;b&amp;gt;snow&amp;lt;/b&amp;gt; package (Tierney et al. 2008) to improve their performance
+via parallel computing. Several network scores and conditional independence algorithms are available
+for both the learning algorithms and independent use. Advanced plotting options are provided by the
+&amp;lt;b&amp;gt;Rgraphviz&amp;lt;/b&amp;gt; package (Gentry et al. 2010).},
+number={3},
+journal={Journal of Statistical Software},
+author={Scutari, Marco},
+year={2010},
+pages={1–22}
+}
+
+@InProceedings{tool-tetrad,
+title = {Py-Tetrad and RPy-Tetrad: A New Python Interface
+with R Support for Tetrad Causal Search},
+author = {Ramsey, Joseph and Andrews, Bryan},
+booktitle = {Proceedings of the 2023 Causal Analysis Workshop
+Series},
+pages = {40--51},
+year = {2023},
+editor = {Kummerfeld, Erich and Ma, Sisi and Rawls, Eric and Andrews, Bryan},
+volume = {223},
+series = {Proceedings of Machine Learning Research},
+month = aug,
+publisher = {PMLR},
+pdf = {https://proceedings.mlr.press/v223/ramsey23a/ramsey23a.pdf},
+url = {https://proceedings.mlr.press/v223/ramsey23a.html}
+}
+
+@article{tool-gcastle,
+	title        = {{gCastle}: A Python Toolbox for Causal Discovery},
+	author       = {Zhang, Keli and Zhu, Shengyu and Kalander, Marcus and others},
+	year         = 2021,
+	journal      = {arXiv preprint arXiv:2111.15155}
+}
+
+@article{dataset-fmri-feedbacks,
+	title        = {Estimating feedforward and feedback effective connections from fMRI time series: Assessments of statistical methods},
+	author       = {Sanchez-Romero, Ruben and Ramsey, Joseph D. and Zhang, Kun and Glymour, Madelyn R. K. and Huang, Biwei and Glymour, Clark},
+	year         = 2019,
+	journal      = {Network Neuroscience},
+	volume       = 3,
+	number       = 2,
+	pages        = {274--306},
+	doi          = {10.1162/netn_a_00061}
+}
+
+@book{ai-peters2017elements,
+	title        = {Elements of Causal Inference: Foundations and Learning Algorithms},
+	author       = {Peters, Jonas and Janzing, Dominik and Sch{\"o}lkopf, Bernhard},
+	year         = 2017,
+	publisher    = {MIT Press},
+	address      = {Cambridge, MA}
+}
+
+@article{ai-miller2019explanation,
+	title        = {Explanation in Artificial Intelligence: Insights from the Social Sciences},
+	author       = {Miller, Tim},
+	year         = 2019,
+	journal      = {Artificial Intelligence},
+	volume       = 267,
+	pages        = {1--38},
+	doi          = {10.1016/j.artint.2018.07.007}
+}
+
+@book{ai-hernan2020causal,
+	title        = {Causal Inference: What If},
+	author       = {Hern{\'a}n, Miguel A. and Robins, James M.},
+	year         = 2020,
+	publisher    = {Chapman \& Hall/CRC},
+	address      = {Boca Raton}
+}
+
+@inproceedings{ai-kusner2017counterfactual,
+	title        = {Counterfactual Fairness},
+	author       = {Kusner, Matt J. and Loftus, Joshua and Russell, Chris and Silva, Ricardo},
+	year         = 2017,
+	booktitle    = {Advances in Neural Information Processing Systems},
+	volume       = 30,
+	pages        = {4066--4076}
+}
+
+@article{ai-runge2019inferring,
+	title        = {Inferring Causation from Time Series in Earth System Sciences},
+	author       = {Runge, Jakob and Bathiany, Sebastian and Bollt, Erik and Camps-Valls, Gustau and Coumou, Dim and Deyle, Ethan and Glymour, Clark and Kretschmer, Marlene and Mahecha, Miguel D. and Mu{\~n}oz-Mar{\'\i}, Jordi and van Nes, Egbert H. and Peters, Jonas and Quax, Rick and Reichstein, Markus and Scheffer, Marten and Sch{\"o}lkopf, Bernhard and Spirtes, Peter and Sugihara, George and Sun, Jie and Zhang, Kun and Zscheischler, Jakob},
+	year         = 2019,
+	journal      = {Nature Communications},
+	volume       = 10,
+	number       = 1,
+	pages        = {2553},
+	doi          = {10.1038/s41467-019-10105-3}
+}
+
+@article{ai-guo2020survey,
+	title        = {A Survey of Learning Causality with Data: Problems and Methods},
+	author       = {Guo, Ruocheng and Cheng, Lu and Li, Jundong and Hahn, P. Richard and Liu, Huan},
+	year         = 2020,
+	journal      = {ACM Computing Surveys},
+	volume       = 53,
+	number       = 4,
+	pages        = {1--37},
+	doi          = {10.1145/3397269}
+}
+
+@article{ai-bengio2019meta,
+	title        = {A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms},
+	author       = {Bengio, Yoshua and Deleu, Tristan and Rahaman, Nasim and Ke, Rosemary and Lachapelle, S{\'e}bastien and Bilaniuk, Olexa and Goyal, Anirudh and Pal, Christopher},
+	year         = 2019,
+	journal      = {arXiv preprint arXiv:1901.10912}
+}
+
+@inproceedings{ai-sharma2020dowhy,
+	title        = {{DoWhy}: An End-to-End Library for Causal Inference},
+	author       = {Sharma, Amit and Kiciman, Emre},
+	year         = 2020,
+	booktitle    = {Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI)},
+	pages        = {722--731}
+}
+
+@article{ai-chen2020causalml,
+	title        = {{CausalML}: Python Package for Causal Machine Learning},
+	author       = {Chen, Huigang and Harinen, Totte and Lee, Jeong-Yoon and Yung, Mike and Zhao, Zhenyu},
+	year         = 2020,
+	journal      = {arXiv preprint arXiv:2002.11631}
+}
+
+@article{ai-brodersen2015causalimpact,
+	title        = {Inferring Causal Impact Using Bayesian Structural Time-Series Models},
+	author       = {Brodersen, Kay H. and Gallusser, Fabian and Koehler, Jim and Remy, Nicolas and Scott, Steven L.},
+	year         = 2015,
+	journal      = {The Annals of Applied Statistics},
+	volume       = 9,
+	number       = 1,
+	pages        = {247--274},
+	doi          = {10.1214/14-AOAS788}
+}
+
+@article{discovery-ges,
+	title        = {Optimal Structure Identification With Greedy Search},
+	author       = {Chickering, David Maxwell},
+	year         = 2002,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 3,
+	pages        = {507--554}
+}
+
+
+
+% FROM CHURN PAPER
+%%%
+% DEFINITIONS
+%%%
+
+@article{manzoor2024review,
+  author={Manzoor, Adnan and Qureshi, Muhammad Asad and Kidney, Edward and Longo, Luca},
+  title={A Review on Machine Learning Methods for Customer Churn Prediction and Recommendations for Business Practitioners},
+  journal={IEEE Access},
+  year={2024},
+  publisher={IEEE}
+}
+
+@article{tamaddonijahromi20141258,
+    title = {Managing B2B customer churn, retention and profitability},
+    journal = {Industrial Marketing Management},
+    volume = {43},
+    number = {7},
+    pages = {1258-1268},
+    year = {2014},
+    issn = {0019-8501},
+    doi = {https://doi.org/10.1016/j.indmarman.2014.06.016},
+    author = {Ali {Tamaddoni Jahromi} and Stanislav Stakhovych and Michael Ewing},
+    keywords = {B2B customer churn, Data mining, Non-contractual setting, Retention campaign, Profit}
+}
+
+@article{neslin2006defection,
+  title={Defection detection: Measuring and understanding the predictive accuracy of customer churn models},
+  author={Neslin, Scott A and Gupta, Sunil and Kamakura, Wagner and Lu, Junxiang and Mason, Charlotte H},
+  journal={Journal of marketing research},
+  volume={43},
+  number={2},
+  pages={204--211},
+  year={2006},
+  publisher={SAGE Publications Sage CA: Los Angeles, CA}
+}
+
+@article{sharma2021causal,
+  title={Causal inference for customer churn prediction},
+  author={Sharma, Amit and Kiciman, Emre},
+  journal={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+  pages={1590--1599},
+  year={2021}
+}
+
+@article{rehman2024proposed,
+  title={A proposed hybrid framework to improve the accuracy of customer churn prediction in telecom industry},
+  author={Rehman, Atiq and Saba, Tanzila and Kashif, Muhammad and Fati, Suliman Mohamed and Bahaj, Saeed Ali and Choudhury, Hiran},
+  journal={Journal of Big Data},
+  volume={11},
+  number={1},
+  pages={92},
+  year={2024},
+  publisher={Springer},
+  doi={10.1186/s40537-024-00922-9}
+}
+
+@article{wang2023early,
+  title={Early warning of telecom enterprise customer churn based on ensemble learning},
+  author={Wang, Yixuan and Zhang, Yaxin and Lu, Yichuan and Yu, Xiaoxuan},
+  journal={Frontiers in Computing and Intelligent Systems},
+  volume={3},
+  number={2},
+  pages={91--99},
+  year={2023},
+  pmcid={PMC10566699}
+}
+
+@article{definition-glymour2019,
+	title        = {Review of Causal Discovery Methods Based on Graphical Models},
+	author       = {Glymour, Clark  and Zhang, Kun  and Spirtes, Peter},
+	year         = 2019,
+	journal      = {Frontiers in Genetics},
+	volume       = {Volume 10 - 2019},
+	doi          = {10.3389/fgene.2019.00524},
+	issn         = {1664-8021},
+}
+
+@article{definition-lipton2016,
+author = {Lipton, Zachary},
+year = {2016},
+month = {10},
+pages = {},
+title = {The Mythos of Model Interpretability},
+volume = {61},
+journal = {Communications of the ACM},
+doi = {10.1145/3233231}
+}
+
+@article{definition-friedman2000,
+author = {Friedman, Jerome},
+year = {2000},
+month = {11},
+pages = {},
+title = {Greedy Function Approximation: A Gradient Boosting Machine},
+volume = {29},
+journal = {The Annals of Statistics},
+doi = {10.1214/aos/1013203451}
+}
+
+@inproceedings{definition-catboost2018,
+ author = {Prokhorenkova, Liudmila and Gusev, Gleb and Vorobev, Aleksandr and Dorogush, Anna Veronika and Gulin, Andrey},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ publisher = {Curran Associates, Inc.},
+ title = {CatBoost: unbiased boosting with categorical features},
+ volume = {31},
+ year = {2018}
+}
+
+
+%%%
+% SOURCES FROM CAUSALNEST PAPER:
+%%%
+
+
+%%%
+% DATASETS
+%%%
+
+%%%
+% WEB APPLICATION TOOLS
+%%%
+@article{docker,
+	title        = {Docker: lightweight linux containers for consistent development and deployment},
+	author       = {Merkel, Dirk},
+	journal      = {Linux journal},
+	volume       = {2014},
+	number       = {239},
+	pages        = {2},
+	year         = {2014}
+}
+
+@misc{postgres,
+	title        = {{PostgreSQL}: The world's most advanced open source database},
+	howpublished = {\url{https://www.postgresql.org/}}
+}
+
+@misc{react,
+	title        = {{React}: The library for web and native user interfaces},
+	howpublished = {\url{https://react.dev/}}
+}
+
+@misc{celery,
+	title        = {{Celery} - Distributed Task Queue},
+	howpublished = {\url{https://docs.celeryq.dev/en/stable/}}
+}
+
+@misc{protobuf,
+	title        = {{Protocol Buffers}},
+	author       = {{Google}},
+	howpublished = {\url{https://protobuf.dev/}}
+}
+
+@misc{grpc,
+	title        = {{gRPC}},
+	howpublished = {\url{https://grpc.io/docs/languages/python/quickstart/}}
+}
+
+@article{cytoscape,
+	title        = {{Cytoscape.js}: a graph theory library for visualisation and analysis},
+	author       = {Franz, M. and Lopes, C.T. and Huck, G. and Dong, Y. and Sumer, O. and Bader, G.D.},
+	journal      = {Bioinformatics},
+	year         = {2016},
+	doi          = {10.1093/bioinformatics/btv557}
+}
+
+@misc{causal-wizard,
+	title        = {{CausalWizard} app},
+	howpublished = {\url{https://causalwizard.app}},
+	year         = {2023}
+}
+
+@misc{flask,
+	title        = {{Flask}},
+	author       = {Pallets},
+	howpublished = {\url{https://flask.palletsprojects.com/}},
+	year         = 2010
+}
+
+@misc{sqlalchemy,
+	title        = {{SQLAlchemy} -- The Database Toolkit for Python},
+	author       = {Bayer, Mike},
+	howpublished = {\url{https://www.sqlalchemy.org/}},
+	year         = 2006
+}
+
+@misc{swagger,
+	title        = {{Swagger UI}},
+	author       = {{SmartBear Software}},
+	howpublished = {\url{https://swagger.io/tools/swagger-ui/}},
+	year         = 2011
+}
+
+% OTHER PUBLICATIONS
+@article{LIMA2024120559,
+title = {Machine learning-based soil quality assessment for enhancing environmental monitoring in iron ore mining-impacted ecosystems},
+journal = {Journal of Environmental Management},
+volume = {356},
+pages = {120559},
+year = {2024},
+issn = {0301-4797},
+doi = {https://doi.org/10.1016/j.jenvman.2024.120559},
+url = {https://www.sciencedirect.com/science/article/pii/S0301479724005450},
+author = {Helena Santiago Lima and Gustavo Ferreira Viegas de Oliveira and Ricardo dos Santos Ferreira and Alex Gazolla de Castro and Lívia Carneiro Fidélis Silva and Letícia de Souza Ferreira and Diego Aniceto dos Santos Oliveira and Leonardo Ferreira da Silva and Maria Catarina Megumi Kasuya and Sérgio Oliveira {de Paula} and Cynthia Canêdo da Silva},
+keywords = {Feature selection, Fundão dam, Monitoring, Decision tree and soil health}
+}
+
+
+@inproceedings{eniac-firefly,
+  author    = {Vinícius Silva and Gustavo Oliveira and Fabrício Silva and Marcus Mendes},
+  title     = { Optimizing Transfer Learning and Fine-Tuning Hyperparameters in Image Classification Problems with Firefly Algorithm},
+  booktitle = {Anais do XXI Encontro Nacional de Inteligência Artificial e Computacional},
+  location  = {Belém/PA},
+  year      = {2024},
+  keywords  = {},
+  issn      = {2763-9061},
+  pages     = {484--495},
+  publisher = {SBC},
+  address   = {Porto Alegre, RS, Brasil},
+  doi       = {10.5753/eniac.2024.245032},
+  url       = {https://sol.sbc.org.br/index.php/eniac/article/view/33818}
+}
+

@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+tmp/
+.DS_Store
+
+.vscode
+
+chapter.pdf

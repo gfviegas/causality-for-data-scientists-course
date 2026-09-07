@@ -1,0 +1,96 @@
+% Conclusão, referências --------------------------------------------------
+\section{Conclusão}
+
+\begin{frame}{Aprendizados}
+	\begin{itemize}
+		\item \textbf{Correlação $\neq$ causalidade}: o Paradoxo de Simpson mostrou isso com dados reais de vacinação, agregando errado, a vacina parecia piorar as coisas;
+		\pause
+		\item Um \textbf{grafo causal} formaliza suas suposições. Ele vem de especialistas, de descoberta automática, ou (o mais realista) dos dois juntos;
+		\pause
+		\item \textbf{Causal Discovery} entrega uma classe de equivalência, não necessariamente a verdade.
+		\pause
+		\item \textbf{Identificar $\to$ Estimar $\to$ Refutar} é um pipeline, não uma fórmula única.
+		\pause
+		\item Causalidade \textbf{não exige um especialista o tempo todo}. Ex: seleção causal de atributos sem ninguém desenhando grafo à mão foi a diferença entre um modelo que quebra sob intervenção e um que não quebra.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Desafios Abertos}
+	Agora que você conhece um pouco mais sobre causalidade, talvez tenha percebido que ainda existem alguns desafios abertos:
+
+	\begin{itemize}
+		\item \textbf{Curva de aprendizado íngreme}: vocabulário, suposições e formalismo matemático são bem diferentes do que se vê em áreas como ML tradicional;
+		\pause
+		\item \textbf{Ferramentas fragmentadas}: você viu a tabela, quase ninguém faz descoberta, estimação e refutação ao mesmo tempo;
+		\pause
+		\item \textbf{Escolher o algoritmo de descoberta certo é confuso}: PC? GES? LiNGAM? A resposta depende de premissas que muitas vezes você nem sabe se valem pro seu dataset;
+		\pause
+		\item \textbf{As ferramentas não conversam entre si}: montar um pipeline automatizado de ponta a ponta hoje é, na prática, trabalho manual de encaixar peças.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sobre o Causal-Nest}
+	Foi exatamente pra atacar esses quatro problemas que desenvolvemos o \textbf{Causal-Nest} \cite{causal-nest-kbs}: um framework que junta descoberta, validação de grafo, estimação e refutação num só pipeline, com interface web pra reduzir a barreira de entrada pra quem não é especialista.
+
+	\pause
+	\vfill
+	Não vamos entrar em detalhes aqui (é assunto pra outro curso!), mas se você curtiu a ideia e quiser se aprofundar:
+
+	\begin{center}
+		\textbf{Causal-Nest: A framework for automated causal discovery and inference} 
+		\small \href{https://doi.org/10.1016/j.knosys.2026.116005}{doi.org/10.1016/j.knosys.2026.116005} \\
+		\textit{Knowledge-Based Systems}, v.~343 (2026)
+	\end{center}
+\end{frame}
+
+\begin{frame}{De onde vem esse curso}
+	Boa parte do conteúdo teórico apresentado aqui foi originalmente escrito como o capítulo teórico da minha dissertação de mestrado na UFV \cite{diss-viegas2026}, sob orientação de Fabrício Aguiar Silva e Marcus Henrique Soares Mendes.
+
+	\pause
+	\vfill
+	Se você quiser ver a mesma ideia de engenharia causal de atributos aplicada com mais profundidade num problema real, temos um estudo publicado no CBIC 2025 \cite{CBIC2025-1175578}: usamos o Causal-Nest pra guiar a engenharia de atributos na previsão de churn de clientes de telecom, e o ganho apareceu de forma consistente em vários modelos de ML diferentes.
+\end{frame}
+
+\begin{frame}{Materiais Extras}
+	\begin{itemize}
+		\item \textbf{Vídeo/slides complementares} \\
+		\href{https://drive.google.com/file/d/1ghmXMiwcGzTnbcT2gYuuKWE01T1wBTdJ/view?usp=sharing}{Causal Representation Learning - Uncovering the Hidden World de Prof. Kun Zhang}
+		\vspace{10pt}
+		\item \textbf{Demo interativa} (Hugging Face Spaces) \\
+		\href{https://huggingface.co/spaces/Shaoan/ConceptGAN}{Demo interativa do trabalho de Zhang}
+		\vspace{10pt}
+		\item \textbf{Notebook extra} --- \texttt{notebooks/extras/5\_heterogeneous\_effects.ipynb} \\
+		CATE com meta-learners (S/T/X-learner) e uma política de tratamento personalizada
+		\vspace{10pt}
+		\item \textbf{Notebook extra} --- \texttt{notebooks/extras/7\_counterfactual\_explanations.ipynb} \\
+		SHAP vs. DiCE, contrafactuais com e sem restrição causal
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Referências}
+	\printbibliography[heading=none]
+\end{frame}
+
+\begin{frame}[plain,standout]
+	\vspace{10pt}
+	{\Huge Obrigado!}
+	\vfill
+	\small
+	Gustavo Ferreira Viegas de Oliveira \\
+	\texttt{gustavo.viegas@ufv.br} \\
+	\href{https://www.linkedin.com/in/gfviegas}{LinkedIn} ~~$\vert$~~ \href{https://lattes.cnpq.br/6788178534558304}{Lattes}
+
+	\vfill
+
+	\begin{tikzpicture}[remember picture, overlay]
+		\fill[white] (current page.south west) rectangle ([yshift=2.6cm]current page.south east);
+		\node at ([yshift=1.5cm]current page.south) {%
+			\includegraphics[height=1.1cm]{figures/ufv-caf.png}%
+			\hspace{40pt}
+			\includegraphics[height=1.6cm]{figures/nesped.png}%
+		};
+		\node[anchor=north east, xshift=-15pt, yshift=-15pt] at (current page.north east) {
+			\includegraphics[height=1.7cm]{figures/logo_group.png}
+		};
+	\end{tikzpicture}
+\end{frame}

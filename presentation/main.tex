@@ -1,0 +1,93 @@
+% !TeX program = xelatex
+\documentclass[aspectratio=169, 10pt]{beamer}
+\usetheme{gotham}
+
+\gothamset{
+	numbering=framenumber,
+	sectiontocframe default=off,
+	subsectiontocframe default=off,
+	parttocframe default=off,
+}
+
+% ---------------------------------------------------------------------------
+% Packages
+% ---------------------------------------------------------------------------
+\usepackage{fontspec}
+\usepackage[brazil]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{moresize}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc}
+\usepackage{listings}
+\lstset{
+	basicstyle=\ttfamily\scriptsize,
+	keywordstyle=\bfseries,
+	commentstyle=\color{gray}\itshape,
+	showstringspaces=false,
+	breaklines=true,
+	language=Python,
+}
+\usepackage{appendixnumberbeamer}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{makecell}
+
+% ---------------------------------------------------------------------------
+% Bibliography (biblatex)
+% ---------------------------------------------------------------------------
+\usepackage[
+	backend=biber,
+	style=numeric,
+	sorting=none,
+]{biblatex}
+\addbibresource{references.bib}
+
+% ---------------------------------------------------------------------------
+% Shorthands used across sections
+% ---------------------------------------------------------------------------
+\newcommand{\docalculus}{\emph{do}-calculus}
+
+\newcommand{\notebooklink}[2]{%
+	\centering
+	\begin{center}
+	\begin{beamercolorbox}[sep=10pt, rounded=true, center, shadow=false, wd=1\textwidth]{block body}
+		\centering 
+		{\Large \textbf{Mão na massa! $\rightarrow$  Notebook #1}}
+		\\[20pt]
+		\normalsize\texttt{#2}
+	\end{beamercolorbox}
+	\end{center}
+}
+
+% ---------------------------------------------------------------------------
+% Front matter
+% ---------------------------------------------------------------------------
+\title[Causality for Data Scientists]{Causality for Data Scientists}
+\subtitle{Discovery, Causal Inference, and Applications in Machine Learning}
+\date{SBBD 2026}
+\author[Gustavo de Oliveira et al.]{Gustavo Ferreira Viegas de Oliveira}
+\institute[UFV]{
+	Universidade Federal de Viçosa (UFV) \\
+	NESPeD Lab \\
+	\texttt{gustavo.viegas@ufv.br}
+}
+
+\begin{document}
+
+\input{sections/00_capa}
+\input{sections/01_sumario}
+\input{sections/02_bios}
+\input{sections/03_motivation}
+\input{sections/04_causality}
+\input{sections/05_causal_discovery}
+\input{sections/06_causal_inference}
+\input{sections/07_software_datasets}
+\input{sections/08_explicability}
+\input{sections/10_conclusion}
+
+\end{document}
